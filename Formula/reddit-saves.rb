@@ -5,8 +5,8 @@
 class RedditSaves < Formula
   desc "Tool to export reddit saved posts"
   homepage "https://github.com/dsully/reddit-saves"
-  url "https://github.com/dsully/reddit-saves/archive/v0.0.1.tar.gz"
-  sha256 "5c18e3d29d80a424222c4818e1d891772d3422cac916facb873ab3649e115cef"
+  url "https://github.com/dsully/reddit-saves/archive/v0.0.2.tar.gz"
+  sha256 "99d24d3faf49f543488d38ee5ac4eef6498d4f9e53239aa5f15f5d09c2ab1b9e"
   license "MIT"
 
   on_macos do
@@ -20,6 +20,6 @@ class RedditSaves < Formula
   end
 
   test do
-    reddit-saves -h
+    system "reddit-saves -h"
   end
 end
