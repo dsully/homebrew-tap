@@ -6,7 +6,7 @@ class RedditSaves < Formula
   desc "Tool to export reddit saved posts"
   homepage "https://github.com/dsully/reddit-saves"
   url "https://github.com/dsully/reddit-saves/archive/v0.0.1.tar.gz"
-  sha256 "ff61f0f1a95f6977f05d63dd1decceb7bb97f9a43f2ebadaaac4dab50ca38226"
+  sha256 "5c18e3d29d80a424222c4818e1d891772d3422cac916facb873ab3649e115cef"
   license "MIT"
 
   on_macos do
@@ -17,5 +17,9 @@ class RedditSaves < Formula
 
   def install
     bin.install "reddit-saves"
+  end
+
+  test do
+    reddit-saves -h
   end
 end
