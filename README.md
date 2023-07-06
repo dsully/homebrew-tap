@@ -6,6 +6,8 @@
 
 Or `brew tap dsully/tap` and then `brew install <formula>`.
 
+## Projects
+
 <!-- project_table_start -->
 | Project                                                | Description                       | Install                     |
 | ------------------------------------------------------ | --------------------------------- | --------------------------- |
