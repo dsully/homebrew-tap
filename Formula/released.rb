@@ -4,13 +4,13 @@ class Released < Formula
   on_macos do
     on_arm do
       url "https://github.com/dsully/released/releases/download/0.0.1/released-aarch64-apple-darwin.tar.xz"
-      sha256 "25cb3f3bbd3e5e390c3b4a31aa0f17e414191ada2327341e5da9252734624981"
+      sha256 "114fed7381f5cff46f9d464c8d6c5950f9f77050abaa0c5cdb3dd217d62b175c"
     end
   end
   on_linux do
     on_intel do
       url "https://github.com/dsully/released/releases/download/0.0.1/released-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6da0683befd19b6ae2842af97f01db70cf05466e853ff7160aefd07a7c6eae68"
+      sha256 "263df23eb6c22297d772ce1ab72d191e9122a371a6d2e29edb13e1f47ba31a32"
     end
   end
   license "MIT"
