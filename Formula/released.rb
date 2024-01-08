@@ -1,16 +1,16 @@
 class Released < Formula
   desc "Install and manage dev tools."
-  version "0.0.1"
+  version "0.0.2"
   on_macos do
     on_arm do
-      url "https://github.com/dsully/released/releases/download/0.0.1/released-aarch64-apple-darwin.tar.xz"
-      sha256 "5967237d13ce160fd55f68e2a658b282bfb746b796cced2da1e18f37ffc35e47"
+      url "https://github.com/dsully/released/releases/download/0.0.2/released-aarch64-apple-darwin.tar.xz"
+      sha256 "159b9b35d54c02952e1c9d79e46bd52ddfa6bdc9ef9c7e444cd2ff9ce352bc86"
     end
   end
   on_linux do
     on_intel do
-      url "https://github.com/dsully/released/releases/download/0.0.1/released-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "559a1803d9bf6e25686dc47a19f37d4d3d1621da6fceef948f19cdc776963d90"
+      url "https://github.com/dsully/released/releases/download/0.0.2/released-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "01a24473ce7995bbcd3216e14f79f63b17b4b481b121da8825568a0c5b6711f7"
     end
   end
   license "MIT"
