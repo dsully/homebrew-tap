@@ -16,10 +16,20 @@ class Released < Formula
   license "MIT"
 
   def install
-    if Hardware::CPU.type == :arm
-      bin.install "released"
-    else
-      bin.install 
+    on_macos do
+      if Hardware::CPU.type == :arm
+        bin.install "released"
+      else
+        bin.install
+      end
+    end
+
+    on_linux do
+      if Hardware::CPU.type == :arm
+        bin.install
+      else
+        bin.install "released"
+      end
     end
 
     # Homebrew will automatically install these, so we don't need to do that
