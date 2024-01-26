@@ -1,33 +1,28 @@
 class Released < Formula
   desc "Install and manage dev tools."
-  version "0.0.3"
+  version "0.0.5"
   on_macos do
     on_arm do
-      url "https://github.com/dsully/released/releases/download/0.0.3/released-aarch64-apple-darwin.tar.xz"
-      sha256 "7e6d89e911f3a9102587acbbe2eca0dadf9b6d8f63d1c848fc832db261c62a51"
+      url "https://github.com/dsully/released/releases/download/0.0.5/released-aarch64-apple-darwin.tar.xz"
+      sha256 "2fe5fc0b9026cff60434d0d9c7ecf75ce3b97f5120c348d9d2ad694f127cf93f"
     end
   end
   on_linux do
     on_intel do
-      url "https://github.com/dsully/released/releases/download/0.0.3/released-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f4d320da8fc55e8cee34d08cab553d24f0116712bdf97e2d8ed1f64506905d02"
+      url "https://github.com/dsully/released/releases/download/0.0.5/released-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4c61d39a610622227c39614e366d95b683d6c293ec0788f9a4f38b47d609a0eb"
     end
   end
   license "MIT"
 
   def install
     on_macos do
-      if Hardware::CPU.type == :arm
+      on_arm do
         bin.install "released"
-      else
-        bin.install
       end
     end
-
     on_linux do
-      if Hardware::CPU.type == :arm
-        bin.install
-      else
+      on_intel do
         bin.install "released"
       end
     end
