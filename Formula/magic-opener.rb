@@ -1,16 +1,16 @@
 class MagicOpener < Formula
   homepage "https://github.com/dsully/magic-opener"
-  version "0.0.1"
+  version "0.0.2"
   on_macos do
     on_arm do
-      url "https://github.com/dsully/magic-opener/releases/download/0.0.1/magic-opener-aarch64-apple-darwin.tar.xz"
-      sha256 "d4d0748ca8db7feeeb2a49accb1c7cee7af2e7e8d309455e36c02b5d9eda1e9b"
+      url "https://github.com/dsully/magic-opener/releases/download/0.0.2/magic-opener-aarch64-apple-darwin.tar.xz"
+      sha256 "fcf0cf57ac6aa84fb91e31212b6e80167703f96f6e93599a58a2ecf982df6192"
     end
   end
   on_linux do
     on_intel do
-      url "https://github.com/dsully/magic-opener/releases/download/0.0.1/magic-opener-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "93da04cb6de9189fdd0b24d5277b175f5aabbc66eb4acf072cc917a5d8fd46f9"
+      url "https://github.com/dsully/magic-opener/releases/download/0.0.2/magic-opener-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e6c894d5250e45d6d6eafe73110f8cc436755907b50e6eca7af30850511462dd"
     end
   end
   license "MIT"
