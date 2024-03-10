@@ -1,19 +1,21 @@
 class Released < Formula
   desc "Install and manage dev tools."
-  version "0.0.5"
+  version "0.0.8"
   on_macos do
     on_arm do
-      url "https://github.com/dsully/released/releases/download/0.0.5/released-aarch64-apple-darwin.tar.xz"
-      sha256 "2fe5fc0b9026cff60434d0d9c7ecf75ce3b97f5120c348d9d2ad694f127cf93f"
+      url "https://github.com/dsully/released/releases/download/0.0.8/released-aarch64-apple-darwin.tar.xz"
+      sha256 "f685d4d2e28f79e4bb53a2c05d0e29b6175c3f0173633c8274dc24d0dd2b33dc"
     end
   end
   on_linux do
     on_intel do
-      url "https://github.com/dsully/released/releases/download/0.0.5/released-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4c61d39a610622227c39614e366d95b683d6c293ec0788f9a4f38b47d609a0eb"
+      url "https://github.com/dsully/released/releases/download/0.0.8/released-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "581c57b180f3e7b6c44999069715bddebf7a5c0609151cfff21acfd6be085ed2"
     end
   end
   license "MIT"
+  
+  depends_on "xz"
 
   def install
     on_macos do
