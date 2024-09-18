@@ -1,10 +1,10 @@
 class MacosDefaults < Formula
   desc "Defaults setting for macOS"
   homepage "https://github.com/dsully/macos-defaults"
-  version "0.1.1"
+  version "0.2.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/dsully/macos-defaults/releases/download/0.1.1/macos-defaults-aarch64-apple-darwin.tar.xz"
-    sha256 "ccc1969e557e988365ac176f9e86ed9e7d1f4e04ff303666e1adbea98177b771"
+    url "https://github.com/dsully/macos-defaults/releases/download/0.2.0/macos-defaults-aarch64-apple-darwin.tar.xz"
+    sha256 "9ac2c9861d2a6ada0a44cbb714647b7438a0052e5b585631808227d9ea2ab46c"
   end
   license "MIT"
 
